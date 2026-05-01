@@ -6,6 +6,51 @@ The bottom navigation has **six** sections: **Home**, **Ledger**, **Insights**, 
 
 ---
 
+## Architecture
+
+The codebase follows a **layered structure** under `app/src/main/java/com/michael/insightlyspend/`:
+
+| Layer | Role |
+|--------|------|
+| **Presentation** (`presentation/`) | Jetpack **Compose** screens, **ViewModels** (`StateFlow` / coroutines), navigation (**Navigation Compose**). |
+| **Domain** (`domain/`) | Use cases, repository **interfaces**, and domain models shared by UI and data. |
+| **Data** (`data/`) | **Room** (DAOs, entities, DB), repository **implementations**, mappers, **DataStore** preferences, **WorkManager** workers, ML/adapters for Insights. |
+
+**Dependency injection** uses **Hilt** (`@AndroidEntryPoint`, `@HiltViewModel`, modules under `di/`). **Background work** (e.g. recurring posting) uses **WorkManager** with **Hilt** worker integration.
+
+**Navigation**: single-activity, **`MainShell`** hosts a bottom **`NavHost`** with typed routes (`AppRoutes`) and optional **deep links** (`insightlyspend://nav/...`) for tooling (e.g. Play Store screenshots).
+
+**Startup**: **MainActivity** applies locale/theme; optional **BiometricGate** wraps the main shell when lock is enabled.
+
+---
+
+## Libraries
+
+Primary dependencies (see `gradle/libs.versions.toml` and `app/build.gradle.kts`):
+
+| Area | Libraries |
+|------|-----------|
+| **UI** | Jetpack **Compose** (BOM), **Material 3**, **Activity Compose**, **material-icons-extended** |
+| **Architecture** | **Lifecycle** (runtime, ViewModel, Compose integration), **Kotlin Coroutines** (Android) |
+| **Navigation** | **Navigation Compose**, **Hilt Navigation Compose** |
+| **DI** | **Dagger Hilt** (with **KSP** for Hilt compiler) |
+| **Persistence** | **Room** (runtime, KTX, KSP compiler) |
+| **Preferences** | **Datastore Preferences** |
+| **Background** | **WorkManager** (+ **Hilt Work**) |
+| **Security / UX** | **Biometric** |
+| **ML (Insights)** | **LiteRT** (`litert`, `litert-api`) for optional on-device inference |
+| **Interop** | **AppCompat**, **Fragment KTX** (where needed for delegates / legacy APIs) |
+
+Testing: **JUnit**, **AndroidX JUnit**, **Espresso**, **Compose UI Test**.
+
+---
+
+## License
+
+This project is licensed under the **MIT License**. See the [`LICENSE`](LICENSE) file.
+
+---
+
 ## Home (Dashboard)
 
 **Purpose:** High-level snapshot of your finances and a shortcut to add a transaction.
@@ -47,7 +92,7 @@ Opened from the **Home** FAB. Creates a new transaction in Room and updates acco
 |------------|----------------|
 | **Search notes** | Filters rows whose **note** contains the text (case-insensitive). |
 | **Cash only** | When selected, only **cash** payment-method transactions. |
-| **This month** | Restricts to **start of current month → now** (and can stack with cash filter). |
+| **This month** | Restricts to **start of current month → end of current month** (and can stack with cash filter). |
 | **Clear filters** | Removes **date range** and **payment** filters (search is separate). |
 | **Day group headers** | “Today”, “Yesterday”, or a calendar date; rows are grouped by day. |
 | **Each card** | Category icon, **category name** (localized), **note**, **time**, and **signed amount** (green + income, red − spend). |
