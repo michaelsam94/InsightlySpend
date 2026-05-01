@@ -4,6 +4,10 @@ A local-first personal finance app for Android. Data is stored in **Room**; list
 
 The bottom navigation has **six** sections: **Home**, **Ledger**, **Insights**, **Budget**, **Vault** (receipts), and **Settings**.
 
+![App overview — Home, Ledger, Insights, Budget, Vault, Settings](docs/app-overview.gif)
+
+*GIF cycles through main tabs; regenerate after UI changes with `python3 scripts/generate_readme_gif.py` (requires Pillow).*
+
 ---
 
 ## Architecture
