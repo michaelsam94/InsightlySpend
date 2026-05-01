@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Insightly Spend</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_ledger">Ledger</string>
+    <string name="nav_insights">Insights</string>
+    <string name="nav_budget">Budget</string>
+    <string name="nav_vault">Vault</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings &amp; portability</string>
+    <string name="settings_currency">Currency</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_language_system">System default</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_language_ar">Arabic</string>
+    <string name="settings_theme">Theme</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="settings_biometric">Biometric lock</string>
+    <string name="settings_export_hint">Exports generate cache files and open the Android share sheet — attach email or cloud backup targets as needed.</string>
+    <string name="export_csv">Export CSV</string>
+    <string name="export_pdf">Export PDF summary</string>
+    <string name="share_export">Share export</string>
+
+    <!-- Dashboard -->
+    <string name="cd_quick_add">Quick add</string>
+    <string name="daily_spending_chart">Daily spending (7 days)</string>
+    <string name="recent_transactions">Recent transactions</string>
+    <string name="overview">Overview</string>
+    <string name="total_balance">Total balance</string>
+    <string name="income_spend_label">Income / Spend</string>
+    <string name="budget_progress">Budget progress</string>
+    <string name="spent_of_budget">%1$s of %2$s</string>
+    <string name="income_spend_pair">%1$s / %2$s</string>
+
+    <!-- Ledger -->
+    <string name="ledger_title">Transaction ledger</string>
+    <string name="ledger_swipe_hint">Swipe start→end to duplicate, end→start to delete.</string>
+    <string name="search_notes">Search notes</string>
+    <string name="cash_only">Cash only</string>
+    <string name="this_month">This month</string>
+    <string name="clear_filters">Clear filters</string>
+    <string name="cd_delete">Delete</string>
+    <string name="cd_duplicate">Duplicate</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+
+    <!-- Analytics -->
+    <string name="analytics_title">Analytics &amp; ML insights</string>
+    <string name="forecast_title">Predictive forecast (%1$s)</string>
+    <string name="predicted_month_end">Predicted month-end spend: %1$s</string>
+    <string name="range_confidence">Range (~95%%): %1$s – %2$s</string>
+    <string name="forecast_disclaimer">Uses on-device linear regression on your daily cadence; optionally blends a bundled TFLite head when `assets/ml/spending_forecast.tflite` exists.</string>
+    <string name="month_comparison">Month comparison</string>
+    <string name="analytics_this_month">This month: %1$s</string>
+    <string name="analytics_last_month">Last month: %1$s</string>
+    <string name="change_percent">Change: %1$.1f%%</string>
+    <string name="category_breakdown">Category breakdown</string>
+    <string name="anomaly_hints">Local anomaly hints</string>
+    <string name="anomaly_line">• %1$s (z=%2$.2f)</string>
+
+    <!-- Budget -->
+    <string name="loading_budgets">Loading budgets…</string>
+    <string name="budget_title">Budget planner</string>
+    <string name="budget_hint">Alerts fire at 80%% usage (surface highlight here; extend with NotificationCompat for push-style prompts).</string>
+    <string name="budget_remaining">Remaining: %1$s</string>
+    <string name="budget_spent_line">Spent %1$s of %2$s</string>
+    <string name="threshold_alert">Threshold alert: past 80%% of budget</string>
+    <string name="budget_add_category_cd">Add custom category</string>
+    <string name="budget_new_category_title">New budget category</string>
+    <string name="category_en_required">English name</string>
+    <string name="category_en_optional">English name (optional)</string>
+    <string name="category_ar_required">Arabic name</string>
+    <string name="category_ar_optional">Arabic name (optional)</string>
+    <string name="categories_manage_title">Categories</string>
+    <string name="categories_manage_add">Add category</string>
+    <string name="category_edit_title">Edit category</string>
+    <string name="category_manage_hint">Edit English and Arabic names; the app picks text by your interface language.</string>
+    <string name="category_delete_title">Delete this category?</string>
+    <string name="category_delete_message">Transactions will be reassigned to %1$s. Recurring rules that use this category will be removed.</string>
+    <string name="category_delete_last">You must keep at least one category.</string>
+    <string name="category_delete_confirm">Delete</string>
+    <string name="budget_custom_name_hint">Category name</string>
+    <string name="budget_custom_limit_hint">Monthly budget</string>
+    <string name="budget_add_category_submit">Add category</string>
+
+    <!-- Default categories (keys match DB seed iconResource) -->
+    <string name="cat_housing">Housing</string>
+    <string name="cat_food_dining">Food &amp; Dining</string>
+    <string name="cat_transport">Transport</string>
+    <string name="cat_entertainment">Entertainment</string>
+    <string name="cat_utilities">Utilities</string>
+    <string name="cat_income">Income</string>
+
+    <!-- Receipts -->
+    <string name="receipts_title">Receipt vault</string>
+    <string name="receipts_hint">Images stored as URIs/paths in Room — plug ML Kit text recognition into Quick Add to lift amounts automatically.</string>
+    <string name="attachment_label">Attachment</string>
+
+    <!-- Quick add -->
+    <string name="quick_add_title">Quick add</string>
+    <string name="amount">Amount</string>
+    <string name="category">Category</string>
+    <string name="wallet">Wallet</string>
+    <string name="account_personal_wallet">Personal Wallet</string>
+    <string name="account_business">Business</string>
+    <string name="debt_lending">Debt / lending</string>
+    <string name="note">Note</string>
+    <string name="quick_add_attach_receipt">Choose from gallery</string>
+    <string name="quick_add_take_photo">Take photo</string>
+    <string name="quick_add_remove_attachment">Remove image</string>
+    <string name="quick_add_receipt_attached">Receipt image will be saved with this transaction</string>
+    <string name="save">Save</string>
+    <string name="income">Income</string>
+    <string name="cash_payment">Cash payment</string>
+    <string name="recurring_template">Mark as recurring template</string>
+    <string name="debt_standard">Standard</string>
+    <string name="debt_standard_sel">Standard ✓</string>
+    <string name="debt_i_owe_short">I owe</string>
+    <string name="debt_i_owe_long">I owe someone</string>
+    <string name="debt_i_owe_sel">I owe ✓</string>
+    <string name="debt_owed_short">Owed to me</string>
+    <string name="debt_owed_long">Someone owes me</string>
+    <string name="debt_owed_sel">Owed to me ✓</string>
+
+    <!-- Recurring rules -->
+    <string name="recurring_title">Recurring transactions</string>
+    <string name="add_rule">Add rule</string>
+    <string name="recurring_hint">Creates planned charges on the scheduled day each month (processed by the daily background worker).</string>
+    <string name="no_recurring_rules">No recurring rules yet.</string>
+    <string name="recurring_rule_line">%1$s • day %2$d • %3$s</string>
+    <string name="amount_currency_label">Amount (%1$s)</string>
+    <string name="day_of_month_label">Day of month (1–28)</string>
+    <string name="edit">Edit</string>
+    <string name="debt_mode">Debt mode</string>
+    <string name="save_rule">Save rule</string>
+    <string name="new_recurring_rule">New recurring rule</string>
+    <string name="edit_recurring_rule">Edit recurring rule</string>
+
+    <!-- Biometric -->
+    <string name="biometric_prompt_title">Unlock Insightly Spend</string>
+    <string name="biometric_prompt_subtitle">Local-only vault — biometrics never leave this device</string>
+    <string name="cancel">Cancel</string>
+    <string name="authenticate_title">Authenticate to continue</string>
+    <string name="unlock_biometrics">Unlock with biometrics</string>
+
+    <!-- Notifications -->
+    <string name="notification_budget_title">Budget alert: %1$s</string>
+    <string name="notification_budget_text">You\'ve used about %1$d%% of this month\'s budget.</string>
+    <string name="notification_budget_big">%1$s: spent vs limit is %2$s / %3$s.</string>
+</resources>

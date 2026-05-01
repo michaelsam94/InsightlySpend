@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- AppCompatActivity (and AppCompatDelegate per-app locales) require an AppCompat/MaterialComponents theme parent. -->
+    <style name="Theme.InsightlySpend" parent="Theme.AppCompat.Light.NoActionBar" />
+</resources>

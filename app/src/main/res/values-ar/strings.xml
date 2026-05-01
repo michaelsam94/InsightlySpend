@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">إنسايتلي سبند</string>
+
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_ledger">دفتر المعاملات</string>
+    <string name="nav_insights">التحليلات</string>
+    <string name="nav_budget">الميزانية</string>
+    <string name="nav_vault">خزينة الإيصالات</string>
+    <string name="nav_settings">الإعدادات</string>
+
+    <string name="settings_title">الإعدادات والتصدير</string>
+    <string name="settings_currency">العملة</string>
+    <string name="settings_language">اللغة</string>
+    <string name="settings_language_system">افتراضي النظام</string>
+    <string name="settings_language_en">الإنجليزية</string>
+    <string name="settings_language_ar">العربية</string>
+    <string name="settings_theme">المظهر</string>
+    <string name="theme_system">النظام</string>
+    <string name="theme_light">فاتح</string>
+    <string name="theme_dark">داكن</string>
+    <string name="settings_biometric">قفل القياسات الحيوية</string>
+    <string name="settings_export_hint">تُنشَأ ملفات التصدير في الذاكرة المؤقتة وتُفتح في ورقة المشاركة — أرفِق البريد أو النسخ الاحتياطي السحابي حسب الحاجة.</string>
+    <string name="export_csv">تصدير CSV</string>
+    <string name="export_pdf">تصدير ملخص PDF</string>
+    <string name="share_export">مشاركة التصدير</string>
+
+    <string name="cd_quick_add">إضافة سريعة</string>
+    <string name="daily_spending_chart">الإنفاق اليومي (7 أيام)</string>
+    <string name="recent_transactions">المعاملات الأخيرة</string>
+    <string name="overview">نظرة عامة</string>
+    <string name="total_balance">إجمالي الرصيد</string>
+    <string name="income_spend_label">الدخل / الإنفاق</string>
+    <string name="budget_progress">تقدّم الميزانية</string>
+    <string name="spent_of_budget">%1$s من %2$s</string>
+    <string name="income_spend_pair">%1$s / %2$s</string>
+
+    <string name="ledger_title">دفتر المعاملات</string>
+    <string name="ledger_swipe_hint">اسحب من البداية→النهاية للنسخ، ومن النهاية→البداية للحذف.</string>
+    <string name="search_notes">بحث في الملاحظات</string>
+    <string name="cash_only">نقد فقط</string>
+    <string name="this_month">هذا الشهر</string>
+    <string name="clear_filters">مسح المرشحات</string>
+    <string name="cd_delete">حذف</string>
+    <string name="cd_duplicate">نسخ</string>
+    <string name="today">اليوم</string>
+    <string name="yesterday">أمس</string>
+
+    <string name="analytics_title">التحليلات ورؤى التعلم الآلي</string>
+    <string name="forecast_title">التنبؤ (%1$s)</string>
+    <string name="predicted_month_end">الإنفاق المتوقع نهاية الشهر: %1$s</string>
+    <string name="range_confidence">النطاق (~95%%): %1$s – %2$s</string>
+    <string name="forecast_disclaimer">يستخدم انحدارًا خطيًا على الجهاز؛ ويمكن دمج نموذج TFLite عند وجود `assets/ml/spending_forecast.tflite`.</string>
+    <string name="month_comparison">مقارنة الشهور</string>
+    <string name="analytics_this_month">هذا الشهر: %1$s</string>
+    <string name="analytics_last_month">الشهر الماضي: %1$s</string>
+    <string name="change_percent">التغيير: %1$.1f%%</string>
+    <string name="category_breakdown">تفصيل الفئات</string>
+    <string name="anomaly_hints">تلميحات الشذوذ المحلية</string>
+    <string name="anomaly_line">• %1$s (z=%2$.2f)</string>
+
+    <string name="loading_budgets">جاري تحميل الميزانيات…</string>
+    <string name="budget_title">مخطط الميزانية</string>
+    <string name="budget_hint">تُفعَّل التنبيهات عند 80%% من الاستخدام (تظهر هنا؛ يمكن توسيعها بإشعارات).</string>
+    <string name="budget_remaining">المتبقي: %1$s</string>
+    <string name="budget_spent_line">أُنفق %1$s من %2$s</string>
+    <string name="threshold_alert">تنبيه: تجاوز 80%% من الميزانية</string>
+    <string name="budget_add_category_cd">إضافة فئة مخصصة</string>
+    <string name="budget_new_category_title">فئة ميزانية جديدة</string>
+    <string name="budget_custom_name_hint">اسم الفئة</string>
+    <string name="budget_custom_limit_hint">الميزانية الشهرية</string>
+    <string name="budget_add_category_submit">إضافة الفئة</string>
+
+    <string name="cat_housing">السكن</string>
+    <string name="cat_food_dining">الطعام والمطاعم</string>
+    <string name="cat_transport">المواصلات</string>
+    <string name="cat_entertainment">الترفيه</string>
+    <string name="cat_utilities">المرافق والخدمات</string>
+    <string name="cat_income">الدخل</string>
+
+    <string name="receipts_title">خزينة الإيصالات</string>
+    <string name="receipts_hint">تُخزَّن الصور كمسارات في قاعدة البيانات — يمكن ربط التعرف على النص في الإضافة السريعة لاستخراج المبالغ.</string>
+    <string name="attachment_label">مرفق</string>
+
+    <string name="quick_add_title">إضافة سريعة</string>
+    <string name="amount">المبلغ</string>
+    <string name="category">الفئة</string>
+    <string name="category_en_required">الاسم بالإنجليزية</string>
+    <string name="category_en_optional">الاسم بالإنجليزية (اختياري)</string>
+    <string name="category_ar_required">الاسم بالعربية</string>
+    <string name="category_ar_optional">الاسم بالعربية (اختياري)</string>
+    <string name="categories_manage_title">الفئات</string>
+    <string name="categories_manage_add">إضافة فئة</string>
+    <string name="category_edit_title">تعديل الفئة</string>
+    <string name="category_manage_hint">عدّل الاسم بالإنجليزية والعربية؛ يعرض التطبيق النص حسب لغة الواجهة.</string>
+    <string name="category_delete_title">حذف هذه الفئة؟</string>
+    <string name="category_delete_message">ستُعاد تعيين المعاملات إلى %1$s. ستُزال القواعد المتكررة المرتبطة بهذه الفئة.</string>
+    <string name="category_delete_last">يجب الإبقاء على فئة واحدة على الأقل.</string>
+    <string name="category_delete_confirm">حذف</string>
+    <string name="wallet">المحفظة</string>
+    <string name="account_personal_wallet">المحفظة الشخصية</string>
+    <string name="account_business">العمل / التجاري</string>
+    <string name="debt_lending">الدين / الإقراض</string>
+    <string name="note">ملاحظة</string>
+    <string name="quick_add_attach_receipt">اختيار من المعرض</string>
+    <string name="quick_add_take_photo">التقاط صورة</string>
+    <string name="quick_add_remove_attachment">إزالة الصورة</string>
+    <string name="quick_add_receipt_attached">ستُحفَظ صورة الإيصال مع هذه المعاملة</string>
+    <string name="save">حفظ</string>
+    <string name="income">دخل</string>
+    <string name="cash_payment">دفع نقدي</string>
+    <string name="recurring_template">وضع علامة كقالب متكرر</string>
+    <string name="debt_standard">قياسي</string>
+    <string name="debt_standard_sel">قياسي ✓</string>
+    <string name="debt_i_owe_short">أنا مدين</string>
+    <string name="debt_i_owe_long">أنا مدين لشخص</string>
+    <string name="debt_i_owe_sel">أنا مدين ✓</string>
+    <string name="debt_owed_short">لك عندي</string>
+    <string name="debt_owed_long">عليه لي دين</string>
+    <string name="debt_owed_sel">لك عندي ✓</string>
+
+    <string name="recurring_title">معاملات متكررة</string>
+    <string name="add_rule">إضافة قاعدة</string>
+    <string name="recurring_hint">تُنشَأ عمليات في اليوم المحدد كل شهر (عبر المهمة اليومية في الخلفية).</string>
+    <string name="no_recurring_rules">لا توجد قواعد متكررة بعد.</string>
+    <string name="recurring_rule_line">%1$s • اليوم %2$d • %3$s</string>
+    <string name="amount_currency_label">المبلغ (%1$s)</string>
+    <string name="day_of_month_label">يوم الشهر (1–28)</string>
+    <string name="edit">تعديل</string>
+    <string name="debt_mode">وضع الدين</string>
+    <string name="save_rule">حفظ القاعدة</string>
+    <string name="new_recurring_rule">قاعدة متكررة جديدة</string>
+    <string name="edit_recurring_rule">تعديل القاعدة المتكررة</string>
+
+    <string name="biometric_prompt_title">فتح إنسايتلي سبند</string>
+    <string name="biometric_prompt_subtitle">خزينة محلية فقط — لا تغادر القياسات الحيوية هذا الجهاز</string>
+    <string name="cancel">إلغاء</string>
+    <string name="authenticate_title">استمر بالمصادقة</string>
+    <string name="unlock_biometrics">فتح بالقياسات الحيوية</string>
+
+    <string name="notification_budget_title">تنبيه ميزانية: %1$s</string>
+    <string name="notification_budget_text">استخدمتَ حوالي %1$d%% من ميزانية هذا الشهر.</string>
+    <string name="notification_budget_big">%1$s: المنفق مقابل الحد %2$s / %3$s.</string>
+</resources>

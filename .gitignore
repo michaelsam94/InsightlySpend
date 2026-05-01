@@ -1,0 +1,57 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+.kotlin/
+
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Android build outputs (includes signed .aab / .apk under app/build/outputs)
+**/build/
+.externalNativeBuild/
+
+# Packaged apps — never commit signed or unsigned bundles from CI/local
+*.aab
+*.apk
+*.ap_
+*.dex
+
+# Mapping / shrink output can expose internals
+**/mapping.txt
+**/seeds.txt
+
+# Release signing — keys & passwords (never commit)
+keystore.properties
+signing.properties
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+release/*
+!release/.gitkeep
+
+# Google Play / Firebase credential exports (keep package.json & app JSON resources)
+google-services.json
+play-upload-credentials.json
+*-credentials.json
+service-account*.json
+
+.venv/
+play-assets/generated/*
+!play-assets/generated/.gitkeep
+play-assets/_logo_source.png
+
+# React privacy site (install/build artifacts)
+InsightlySpendWeb/node_modules/
+InsightlySpendWeb/dist/
